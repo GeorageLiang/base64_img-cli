@@ -1,6 +1,6 @@
 {
   "name": "base64_img-cli",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Easy command convert img to base64",
   "main": "index.js",
   "bin": {
@@ -16,6 +16,13 @@
     "img",
     "cli"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GeorageLiang/base64_img-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GeorageLiang/base64_img-cli/issues"
+  },
   "dependencies": {
     "base64-img": "^1.0.3",
     "commander": "^2.9.0",
