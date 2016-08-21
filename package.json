@@ -1,0 +1,25 @@
+{
+  "name": "base64_img-cli",
+  "version": "1.0.6",
+  "description": "Easy command convert img to base64",
+  "main": "index.js",
+  "bin": {
+    "trans": "bin/cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "otteregg",
+  "license": "MIT",
+  "keywords": [
+    "base64",
+    "img",
+    "cli"
+  ],
+  "dependencies": {
+    "base64-img": "^1.0.3",
+    "commander": "^2.9.0",
+    "file-system": "^2.2.1",
+    "iconv-lite": "^0.4.13"
+  }
+}
