@@ -1,6 +1,6 @@
 {
   "name": "base64_img-cli",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Easy command convert img to base64",
   "main": "index.js",
   "bin": {
