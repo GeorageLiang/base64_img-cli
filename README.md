@@ -6,6 +6,26 @@ Easy command convert img to base64
 npm install base64_img-cli --save
 ```
 ## convert
+
+
+```
+trans -s <imgPath>
+```
+
+##example
+
+```
+trans -s imgs/1.png
+```
+
+> generate baseData.json
+
+
+
+
+## for html <img> 
+
+
 ```
 trans i <imgPath> -j <html>
 ```

@@ -32,6 +32,7 @@ var iconv = require('iconv-lite');
 program
     .version(appInfo.version)
     .usage('trans [options] <path>')
+    .option('-s, --set <imgpath>','input image path')
     .option('-r, --restore <html>','restore html')
     .command('input <img>')
     .alias('i')
@@ -53,7 +54,16 @@ program
     });
 program.parse(process.argv);
 
-
+if(program.set){
+    fs.readFile(program.set, function(err, data) {
+            if (err) return callback(err);
+            var baseData = base64Img.base64Sync(program.set);
+            console.log(baseData);
+            fs.writeFile("baseData.json", baseData, function (err) {
+                console.log("success");
+            })
+        });
+}
 
 if(program.restore){
     path = process.cwd();
